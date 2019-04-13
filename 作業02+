@@ -1,0 +1,33 @@
+    
+＃包括< stdio.h中>
+＃包括< stdlib.h中>
+char * Rever_string（char * l）
+{
+	int o = 0 ;
+	char * i;
+	char temp;
+	i = l;
+	而（* l！= 0）
+	{
+		升++;
+		ö++;
+	}
+	if（o> 1）
+	{
+		temp = i [ 0 ];
+		我[ 0 ] =我[o  - 1 ];
+		我[o  - 1 ] = ' \ 0 ' ;
+		Rever_string（i + 1）;
+		我[o  - 1 ] = temp;
+	}
+	回歸我;
+}
+int  main（）
+{
+	printf（“輸入你的字元：”）;
+	char l [ 1000 ];
+	得到（l）;
+	printf（“翻轉後為：％s \ n ”，Rever_string（l））;
+	系統（“暫停”）;
+	返回 0 ;
+}
